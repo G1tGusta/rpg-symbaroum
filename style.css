@@ -162,4 +162,40 @@ table td {
 .race-table td {
     background-color: #ffffff; /* Fundo branco para as células */
 }
+/* Estilo para a Tabela de Arquétipos */
+.archetype-table {
+    background-color: #d9e9d3; /* Fundo claro para a seção */
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #70a163; /* Cor verde para a borda */
+    border-radius: 8px;
+}
+
+.archetype-table h2 {
+    color: #70a163; /* Cor verde para o título */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo da Tabela */
+.archetype-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.archetype-table th, .archetype-table td {
+    border: 1px solid #70a163; /* Cor verde para as bordas */
+    padding: 8px;
+    text-align: left;
+}
+
+.archetype-table th {
+    background-color: #70a163; /* Cor verde para o cabeçalho */
+    color: #f4f1e6; /* Cor clara para o texto do cabeçalho */
+}
+
+.archetype-table td {
+    background-color: #ffffff; /* Fundo branco para as células */
+}
 
