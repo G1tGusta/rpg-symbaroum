@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taverna do Aventureiro</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="imagens/rpggame.png" type="image/x-icon">
+    </head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Taverna do Aventureiro</h1>
+        <h4> by Melhor taverneiro do mundo </h4> 
+        <p>Bem-vindo, aventureiro! Aqui vai algumas anotações importantes para se lembrar.</p>
+    </header>
+
+    <!-- Seção de Anotações -->
+    <main>
+        <div class="notepad">
+            <h2>Criação de Personagem</h2>
+            <div class="note">
+                <h3>Distribuição / Comprar Pontos:</h3> <br>
+                <p><strong>Distruibuição:</strong> Distribua entre 5, 7, 9, 10, 10, 11, 13 e 15</p><br>
+                <p><strong>Compras:</strong> 80 pts entre os oito Atributos, e claro n pode ser maior doq 15 e nem menor doq 5</p>
+            </div>
+            <div class="note">
+                <h3>Atributos:</h3>
+                <p><strong>ASTUTO</strong> Perspicácia, usado para se lembrar de algo, resolver coisas. <strong> (Teste Oposto: DT) </strong></p> <br>  
+                <p><strong>DISCRETO</strong> Ser silencioso,agil, usado para evitar problema, perseguir alguem, roubar algo no bolso. <strong> (Teste Oposto: Vigilancia) </strong> </p> <br>  
+                <p><strong>PERSUASIVO</strong> Influencia os outros com palavras,voz,aparencia e etc, usadao para persuadir alguem a fazer ou nao algo. <strong> (Teste Oposto: Resoluto) </strong> </p> <br>  
+                <p><strong>PRECISO</strong> Coordenação motora e precisão, usado para acerta alvo com golpes, arremessos, disparos. <strong> (Teste Oposto: Rápido) </strong> </p> <br>  
+                <p><strong>RÁPIDO</strong> Reflexos, Equilibrio e agilidade, usado para determinar a iniciativa em combate e é utilizado evitar ferimentos, manobras, saltos. <strong> (Teste Oposto: Preciso) </strong></p> <br>  
+                <p><strong>RESOLUTO</strong> Resistencia à influencia, seja social, controle mental ou corrupção. usado tambem para uso de poderes místicos <strong> (Teste Oposto: Persuasivo ou Resoluto) </strong></p> <br>  
+                <p><strong>VIGILANTE</strong> Prontidão geral, usado para olhos atentos/ sua capacidade de detectar detalhes. <strong> (Teste Oposto: Discreto) </strong></p> <br>  
+                <p><strong>VIGOROSO</strong> Capacidade da sua Força Fisica, usado para erguer algo pesado, quebrar porta, suportar dores, resistir a venenos e doenças. Alem disso ela determina tambem sua vitalidade.<strong> (Teste Oposto: Vigoroso ou DT) </strong></p>
+            </div>
+            <div class="note">
+                <h3>Atributos Secundarios:</h3>
+                <p><strong>VITALIDADE</strong> = Vigoroso <strong>[Recomendado Nunca seja Abaixo de 10]</strong></p> <br>  
+                <p><strong>LIMIAR DA DOR</strong> = Vigoroso/2 <strong>[Arredondado pra cima]</strong> </p> <br>  
+                <p><strong>DEFESA</strong> = Rápido - Obstruitividade da Armadura </p> <br>  
+                <p><strong>LIMIAR DA CORRUPÇÃO</strong> = Resoluto/2 <strong>[Arredondado pra cima]</strong> </p> <br>  
+            </div>
+        </div>
+
+    <!-- Tabela de Armaduras -->
+    <div class="equipments">
+        <h2>Armaduras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Armadura Leve</th>
+                    <th>Proteção 1d4 </th>
+                    <th>Qualidade</th>
+                    <th>Obstrutiva</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manto da Ordem</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>Pele de Lobo</td>
+                    <td>-</td>
+                    <td>Desajeitada</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>Robe Abençoado</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>Seda Tecida</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>Toga de Bruxa</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-2</td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th>Armadura Media</th>
+                        <th>Proteção 1d6</th>
+                        <th>Qualidade</th>
+                        <th>Obstrutiva</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Armadura de Corvo</td>
+                    <td>-</td>
+                    <td>Desajeitada</td>
+                    <td>-3</td>
+                </tr>
+                <tr>
+                    <td>Couraça de Seda</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-3</td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th>Armadura Pesada</th>
+                        <th>Proteção 1d8</th>
+                        <th>Qualidade</th>
+                        <th>Obstrutiva</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Armadura Completa</td>
+                    <td>-</td>
+                    <td>Flexivel</td>
+                    <td>-4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tabela de Qualidade -->
+    <div class="equipments">
+        <h2>Qualidade dos Equipamentos [Pág 152] </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualidade</th>
+                    <th>Efeito</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Articulada</td>
+                    <td>Sem modificadores</td>
+                    <td>Não entendi, mucho texto</td>
+                </tr>
+                <tr>
+                    <td>Contundente</td>
+                    <td>-1 passo no dado da arma [exemplo: bastão da 1d6 inves de 1d8]</td>
+                    <td>Nao tem habilidade C ou P.</td>
+                </tr>
+                <tr>
+                    <td>Curta</td>
+                    <td>Sem modificadores</td>
+                    <td>Pode Sacar como ação Livre ou com Fintar</td>
+                </tr>
+                <tr>
+                    <td>Desajeitada</td>
+                    <td>Sem modificadores</td>
+                    <td>Dificil de se mover, logo ganha efeitos negativos em Defesa; Leve (-3 penalidade), Media (-4), Pesada (-5)</td>
+                </tr>
+                <tr>
+                    <td>Equilibrada</td>
+                    <td>Ganha +1 na Defesa</td>
+                    <td>Equilibrio foda. E é mais efetiva quando vc aparar, ai vc ganha o efeito.</td>
+                </tr>
+                <tr>
+                    <td>Flexivel</td>
+                    <td>mucho texto</td>
+                    <td>Não sofre penalidade nos testes de defesa,furtivo e etc.</td>
+                </tr>
+                <tr>
+                    <td>Imapcto Profundo</td>
+                    <td>+1 de Dano</td>
+                    <td>A arma fica mais fodona dos games mortal, pode perfurar armadura.</td>
+                </tr>
+                <tr>
+                    <td>Longa</td>
+                    <td>Ataca de mais longe que o comum (obv né krl é longa a arma) ganha Att Livre.</td>
+                    <td>Ganha att Livre quando alguem esta corpo-a-corpo com vc e nao esteja utilizando uma arma longa tbm.</td>
+                </tr>
+                <tr>
+                    <td>Obstrutiva</td>
+                    <td>Penalidade em Teste de Defesa, furtividade e poderes misticos</td>
+                    <td>Armadura do Ravel, logo tu faz tudo lento pa krl</td>
+                </tr>
+                <tr>
+                    <td>Precisa</td>
+                    <td>+1 em Teste de Att</td>
+                    <td>Arma é facil de enpunhar.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+        <!-- Tabela de Equipamentos -->
+        <div class="equipments">
+            <h2>Armas/Equipamentos [Pág 149]</h2>
+            <img src="imagens/equipamentos.png" alt="Tabela de Equipamentos" style="width:100%; max-width:600px;">
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+    <p>&copy; 2024 Gustavo Fodão dos games</p>
+    </footer>
+    </body>
+    </html>

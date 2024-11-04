@@ -1,0 +1,129 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f1e6; /* Fundo claro para contraste */
+    color: #333; /* Cor do texto */
+}
+
+/* Cabeçalho */
+header {
+    background: #70a163; /* Mudado para verde */
+    color: #f4f1e6;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 10px;
+}
+
+/* Seção de Anotações */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f5e3;
+    border: 2px solid #70a163; /* Mudado para verde */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.notepad {
+    margin-bottom: 20px;
+}
+
+.notepad h2 {
+    font-size: 1.8em;
+    color: #70a163; /* Mudado para verde */
+    border-bottom: 2px solid #70a163; /* Mudado para verde */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo das Notas */
+.note {
+    background-color: #fffdf5;
+    border: 1px solid #70a163; /* Mudado para verde */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note h3 {
+    font-size: 1.4em;
+    color:#70a163;
+    margin-bottom: 8px;
+    color: #4e342e; /* Pode ser mantido, se preferir um contraste diferente */
+}
+
+/* Botão de Adicionar Nova Anotação */
+.add-note {
+    background-color: #70a163; /* Mudado para verde */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-note:hover {
+    background-color: #70a163; /* Mantenha esta cor ou ajuste conforme necessário */
+}
+
+/* Rodapé */
+footer {
+    background-color: #70a163; /* Cor verde para o rodapé */
+    color: #ffffff; /* Cor clara do texto do rodapé */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para a seção de Equipamentos */
+.equipments {
+    background-color: #d9e9d3; /* Fundo claro para a seção */
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #70a163; /* Cor verde nas bordas */
+    border-radius: 8px;
+}
+
+.equipments h2 {
+    color: #70a163; /* Cor verde para títulos */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #70a163; /* Cor verde nas bordas da tabela */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #70a163; /* Cor verde para o cabeçalho da tabela */
+    color: #f4f1e6; /* Cor clara do texto do cabeçalho */
+}
+
+table td {
+    background-color: #ffffff; /* Fundo branco para as células da tabela */
+}
