@@ -198,4 +198,19 @@ table td {
 .archetype-table td {
     background-color: #ffffff; /* Fundo branco para as células */
 }
+/* Estilo do Botão Ladino */
+.ladino-skills button {
+    background-color: #70a163; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
 
+.ladino-skills button:hover {
+    background-color: #5d8b59; /* Cor mais escura ao passar o mouse */
+}
