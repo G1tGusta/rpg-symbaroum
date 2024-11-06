@@ -254,3 +254,18 @@ table td {
     background-color: #290101; /* Cor mais escura ao passar o mouse */
 }
 
+.race-table button {
+    background-color: #70a163; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.race-table button:hover {
+    background-color: #4b6b42; /* Cor mais escura ao passar o mouse */
+}
