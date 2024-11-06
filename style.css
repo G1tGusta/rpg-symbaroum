@@ -198,9 +198,46 @@ table td {
 .archetype-table td {
     background-color: #ffffff; /* Fundo branco para as células */
 }
+/* Estilo para a seção de Habilidades Ladino */
+.ladino-skills {
+    background-color: #f9f5e3; /* Fundo claro para a seção */
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid #520100; /* Cor vermelha escura nas bordas */
+    border-radius: 8px;
+}
+
+.ladino-skills h2 {
+    color: #520100; /* Cor vermelha escura para o título */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo da Tabela */
+.ladino-skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.ladino-skills th, .ladino-skills td {
+    border: 1px solid #520100; /* Cor vermelha escura nas bordas da tabela */
+    padding: 8px;
+    text-align: left;
+}
+
+.ladino-skills th {
+    background-color: #520100; /* Cor vermelha escura para o cabeçalho da tabela */
+    color: #ffffff; /* Cor clara do texto no cabeçalho */
+}
+
+.ladino-skills td {
+    background-color: #ffffff; /* Fundo branco para as células */
+}
+
 /* Estilo do Botão Ladino */
 .ladino-skills button {
-    background-color: #70a163; /* Cor verde para o botão */
+    background-color: #520100; /* Cor verde para o botão */
     color: #f4f1e6;
     padding: 10px 20px;
     font-size: 1em;
@@ -212,5 +249,5 @@ table td {
 }
 
 .ladino-skills button:hover {
-    background-color: #5d8b59; /* Cor mais escura ao passar o mouse */
+    background-color: #290101; /* Cor mais escura ao passar o mouse */
 }
