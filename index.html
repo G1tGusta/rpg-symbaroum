@@ -127,78 +127,6 @@
             </tbody>
         </table>
     </div>
-
-        <!-- Tabela de Equipamentos -->
-        <div class="equipments">
-            <h2>Armas/Equipamentos [Pág 149]</h2>
-            <img src="imagens/equipamentos.png" alt="Tabela de Equipamentos" style="width:100%; max-width:600px;">
-        </div>
-
-    <!-- Tabela de Qualidade -->
-    <div class="equipments">
-        <h2>Qualidade dos Equipamentos [Pág 152] </h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Qualidade</th>
-                    <th>Efeito</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Articulada</td>
-                    <td>Sem modificadores</td>
-                    <td>Não entendi, mucho texto</td>
-                </tr>
-                <tr>
-                    <td>Contundente</td>
-                    <td>-1 passo no dado da arma [exemplo: bastão da 1d6 inves de 1d8]</td>
-                    <td>Nao tem habilidade C ou P.</td>
-                </tr>
-                <tr>
-                    <td>Curta</td>
-                    <td>Sem modificadores</td>
-                    <td>Pode Sacar como ação Livre ou com Fintar</td>
-                </tr>
-                <tr>
-                    <td>Desajeitada</td>
-                    <td>Sem modificadores</td>
-                    <td>Dificil de se mover, logo ganha efeitos negativos em Defesa; Leve (-3 penalidade), Media (-4), Pesada (-5)</td>
-                </tr>
-                <tr>
-                    <td>Equilibrada</td>
-                    <td>Ganha +1 na Defesa</td>
-                    <td>Equilibrio foda. E é mais efetiva quando vc aparar, ai vc ganha o efeito.</td>
-                </tr>
-                <tr>
-                    <td>Flexivel</td>
-                    <td>mucho texto</td>
-                    <td>Não sofre penalidade nos testes de defesa,furtivo e etc.</td>
-                </tr>
-                <tr>
-                    <td>Imapcto Profundo</td>
-                    <td>+1 de Dano</td>
-                    <td>A arma fica mais fodona dos games mortal, pode perfurar armadura.</td>
-                </tr>
-                <tr>
-                    <td>Longa</td>
-                    <td>Ataca de mais longe que o comum (obv né krl é longa a arma) ganha Att Livre.</td>
-                    <td>Ganha att Livre quando alguem esta corpo-a-corpo com vc e nao esteja utilizando uma arma longa tbm.</td>
-                </tr>
-                <tr>
-                    <td>Obstrutiva</td>
-                    <td>Penalidade em Teste de Defesa, furtividade e poderes misticos</td>
-                    <td>Armadura do Ravel, logo tu faz tudo lento pa krl</td>
-                </tr>
-                <tr>
-                    <td>Precisa</td>
-                    <td>+1 em Teste de Att</td>
-                    <td>Arma é facil de enpunhar.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     
     <!-- Tabela Raças -->
     <div class="race-table">
@@ -332,7 +260,390 @@
             </tbody>
         </table>
     </div>
-        
+    <!-- Tabela Guerreiro Skills --> 
+    <div class="guerreiro-skills">
+        <h2>Habilidades Guerreiro</h2>
+        <button onclick="toggleTTTTable()">Expandir / Minimizar</button>
+        <table id="guerreiroTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Habilidade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estrangulador</td>
+                    <td><strong>Novato: </strong> <i>Ativa:</i>Atacar
+                        com Vantagem. Um ataque bem-sucedido causa 1D6 de dano a cada turno e ignora
+                        Armadura. O alvo não pode agir até que o
+                        domínio do Estrangulador seja removido; o
+                        personagem mantém o estrangulamento com
+                        um Teste bem-sucedido de <strong>[Astuto←Astuto]</strong>. <br>
+                    
+                        <strong>Adepto: </strong> <i>Ativa:</i>O personagem sabe como utilizar os
+                        mortais Esporos Sufocantes, colhidos nas
+                        profundezas da Davokar por alquimistas. Com
+                        um Teste bem-sucedido de <strong>[Astuto←Rápido]</strong>,
+                        os esporos são arremessados em um inimigo
+                        e causam 1D4 de dano por turno durante 1D4
+                        turnos, ignorando a Armadura. Não há contramedida contra o efeito de Esporos Sufocantes
+                        além de curar a vítima quando o dano ocorre.
+                        Vítimas afetadas podem agir normalmente, ao
+                        contrário do nível Novato desta habilidade. <br>
+
+                        <strong>Mestre: </strong> <i>Ativa:</i>O personagem pode utilizar as delicadas
+                        e letais Bombas de Esporos criadas a partir de
+                        Esporos Sufocantes por mestres alquimistas.
+                        Elas podem ser usadas a distância. É necessário um Teste bem-sucedido de Astuto para a
+                        bomba aterrissar no local pretendido. A Bomba
+                        de Esporos preenche um corredor, uma área
+                        menor ou uma sala comum com uma nuvem
+                        sufocante. Qualquer um que estiver na área,
+                        tanto inimigos quanto aliados, são afetados
+                        pelos Esporos Sufocantes, que ignoram a
+                        Armadura e causam 1D4 de dano por turno
+                        durante 1D4 turnos. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Combatente de Escudo</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas empunhadas no braço da espada do personagem é 
+                        aumentado em um passo; para 1D10 se o personagem luta com uma arma de uma mão ou para 
+                        1D8 se luta com uma arma Curta. O Combatente 
+                        de Escudo Novato empunha seu escudo como 
+                        um instrumento de proteção com maior eficiência e, portanto, recebe +2 de bônus de Defesa em 
+                        vez do +1 normal quando utiliza um escudo.<br>
+                    
+                        <strong>Adepto: </strong> <i>Reação:</i>O personagem aprendeu tão bem 
+                        a como combinar arma e escudo, que todo 
+                        ataque bem-sucedido pode ser seguido por 
+                        uma pancada com escudo contra o mesmo 
+                        alvo. O dano da pancada com escudo é de 1D4, 
+                        e se o personagem obtiver sucesso em um 
+                        Teste de <strong>[Vigoroso←Vigoroso]</strong>, O alvo também 
+                        é derrubado no chão.<br>
+
+                        <strong>Mestre: </strong><i>Reação:</i>O dano da pancada com escudo é 
+                        aumentado de 1D4 para 1D8 e o alvo ainda é 
+                        derrubado no chão se o personagem obtiver 
+                        sucesso em um Teste de <strong>[Vigoroso←Vigoroso]</strong>. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Força da Empunhadura Dupla</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas pesadas é 
+                        aumentado para 1D12.<br>
+                    
+                        <strong>Adepto: </strong> <i>Reação :</i> O personagem dominou a utilização 
+                        de sua arma, portanto, quando um ataque 
+                        erra um alvo, o personagem pode utilizar o movimento de retorno do ataque para tentar 
+                        acertar o alvo novamente. O personagem realiza uma nova jogada de ataque, que causa 1D8 
+                        de dano se acertar.<br>
+
+                        <strong>Mestre: </strong><i>Ativa:</i>Uma arma pesada nas mãos de um Mestre é uma verdadeira ferramenta de destruição 
+                        de armaduras. Quando o ataque de um Mestre 
+                        atinge seu alvo, ele ignora completamente a 
+                        Armadura do alvo. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ataque Gêmeo</td>
+                    <td><strong>Novato: </strong> <i>Ativa:</i>. O personagem pode empunhar duas
+                        armas com segurança, uma em cada mão. O
+                        Novato pode lutar com uma arma de uma mão
+                        em sua mão primária e uma arma Curta na outra.
+                        O personagem pode realizar dois ataques
+                        no mesmo alvo, causando 1D8 e 1D6 de dano
+                        respectivamente. O inimigo deve se defender
+                        separadamente contra os ataques. O Novato
+                        também recebe +1 de bônus em sua Defesa
+                        como uma habilidade Passiva, mas somente quando empunhar uma arma em cada mão<br>
+                    
+                        <strong>Adepto:</strong> <i>Ativa:</i>O Adepto pode utilizar duas armas de
+                        uma mão, cada uma causando 1D8 de dano.<br>
+
+                        <strong>Mestre:</strong><i>Ativa:</i>Com a perícia de um Mestre, o dano
+                        causado pela arma da mão primária é 1D10,
+                        enquanto a arma na outra mão causa 1D8.</td>
+                </tr>
+                <tr>
+                    <td>Saque Rápido</td>
+                    <td><strong>Novato: </strong> <i>Livre:</i>Com uma jogada bem-sucedida contra 
+                        Rápido, o personagem pode desembainhar e 
+                        sacar uma arma como uma Ação Livre, assim 
+                        sendo capaz de utilizar a arma como se ela já 
+                        estivesse sacada. O personagem também pode 
+                        recarregar uma besta como uma Ação Livre 
+                        com um Teste bem-sucedido de Rápido.<br>
+                    
+                        <strong>Adepto:</strong> <i>Livre:</i>Com um Teste bem-sucedido de Rápido, 
+                        o personagem pode trocar de armas como uma 
+                        Ação Livre, significando que o personagem 
+                        pode embainhar uma arma e sacar outra em um 
+                        movimento fluido.<br>
+
+                        <strong>Mestre:</strong> <i>Livre:</i>O personagem manuseia elixires rapidamente e pode, com um Teste bem-sucedido de 
+                        Rápido, derramar uma dose em si mesmo ou na 
+                        garganta de alguém como uma Ação Livre.</td>
+                </tr>
+                <tr>
+                    <td>Guarda-Costas</td>
+                    <td><strong>Novato: </strong> <i>Reação:</i>Com um teste de Resoluto
+                        bem-sucedido, o personagem pode sofrer 
+                       golpes direcionados contra um aliado. O personagem não pode se defender contra estes 
+                       ataques; eles acertam automaticamente.<br>
+                    
+                        <strong>Adepto:</strong><i>Reação:</i>Como Novato, mas a capacidade do 
+                        personagem como um guardião lhe permite se 
+                        defender contra todos os ataques mirados na 
+                        pessoa que ele ou ela está protegendo.<br>
+
+                        <strong>Mestre:</strong><i>Reação:</i>Como Adepto, mas o personagem 
+                        é um autêntico santo guardião. O personagem pode não apenas se defender contra os 
+                        ataques, mas também recebe um Ataque Livre 
+                        contra qualquer um que realizar uma ofensiva 
+                        contra a pessoa sob sua proteção.</td>
+                </tr>
+                <tr>
+                    <td>Amoque</td>
+                    <td><strong>Novato: </strong> <i>Livre:</i> O personagem pode, com uma Ação 
+                        Livre, entrar em um frenesi assassino que foca 
+                        unicamente em ferir o inimigo, causando 1D6 
+                        de dano extra quando luta em combate corpo 
+                        a corpo. A desvantagem deste frenesi é que o 
+                        personagem não pode se defender apropriadamente. O Rápido do personagem é considerado 
+                        5 quando calculando sua Defesa.<br>
+                    
+                        <strong>Adepto:</strong> <i>Reação:</i> Esta fúria é como armadura para o 
+                        personagem. Ele ou ela ignora 1D4 de dano 
+                        de cada golpe sofrido enquanto estiver em 
+                        fúria amoque.<br>
+
+                        <strong>Mestre:</strong> <i>Livre:</i>O personagem aprendeu a lidar com sua 
+                        fúria sem perder nada de seu poder. O personagem pode utilizar a capacidade de causar 
+                        e ignorar dano enquanto ainda é capaz e se 
+                        defender normalmente.</td>
+                </tr>
+                <tr>
+                    <td>Punho de Ferro</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem pode utilizar totalmente sua força, portanto utiliza Vigoroso em vez 
+                        de Preciso quando realiza um ataque corpo a 
+                        corpo.<br>
+                    
+                        <strong>Adepto:</strong> <i>Passiva:</i>Os ataques corpo a corpo do personagem agora causam +1D4 de dano adicional.<br>
+
+                        <strong>Mestre:</strong> <i>Ativa:</i>O personagem sabe como realmente 
+                        colocar sua força em um ataque. O personagem pode executar um ataque corpo a corpo 
+                        devastador uma vez por turno que causa +1D8 
+                        em vez de +1D4 de dano adicional. </strong>.</td>
+                </tr>
+                <tr>
+                    <td>Equestre</td>
+                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem é um cavaleiro experiente e acostumado a lutar montado. O personagem sabe como utilizar o peso da montaria 
+                        em uma investida de cavalaria e causa +1D6 de 
+                        dano adicional com um ataque corpo a corpo 
+                        se a montaria se mover antes do ataque.<br>
+                    
+                        <strong>Adepto:</strong> <i>Ativa:</i>O elo entre uma montaria e seu cavaleiro torna possível que realizem ataques de 
+                        passagem, significando que podem utilizar 
+                        parte de sua Ação de Movimento antes de 
+                        atacar, e o restante após. Desta forma, são 
+                        capazes de realizar um ataque corpo a corpo 
+                        sem ficarem presos ao combate. O inimigo 
+                        pode retaliar apenas utilizando Reações ou 
+                        gastando sua Ação de Movimento tentando 
+                        alcançar o cavaleiro.<br>
+
+                        <strong>Mestre:</strong><i>Ativa:</i>O cavaleiro Mestre pode utilizar uma 
+                        investida de cavalaria ainda mais eficientemente, portanto, causa +1D10 de dano com um 
+                        ataque corpo a corpo se a montaria se mover 
+                        antes do ataque.</td>
+                </tr>
+                <tr>
+                    <td>Homem-de-Armas</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem sabe como utilizar sua 
+                        armadura para efeito máximo, o que aumenta o 
+                        nível da Armadura em um passo: armaduras leves protegem 1D6, armaduras médias protegem 
+                        1D8 e armaduras pesadas protegem 1D10.<br>
+                    
+                        <strong>Adepto:</strong> <i>Passiva:</i>O personagem é acostumado a vestir 
+                        armaduras e pode adaptar suas ações às limitações delas. A armadura não tem mais efeito 
+                        negativo em Rápido ou em habilidades baseadas 
+                        em Rápido (incluindo Defesa). A qualidade Obstrutiva da armadura ainda tem efeito negativo ao 
+                        usar poderes místicos.<br>
+
+                        <strong>Mestre:</strong><i>Reação:</i>O personagem pode rolar contra Rápido
+                        para neutralizar habilidades ou equipamentos 
+                        que fazem com que ataques inimigos ignorem ou 
+                        reduzam seu valor de Armadura; se o Teste for 
+                        bem-sucedido, a Armadura protege normalmente. Poderes místicos que ignoram Armadura não 
+                        podem ser bloqueados desta maneira; eles não 
+                        são afetados pela habilidade Homem-de-Armas</td>
+                </tr>
+                <tr>
+                    <td>Dominação</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem pode dominar e
+                        manobrar um combatente inimigo utilizando
+                        sua personalidade convincente. O personagem
+                        pode utilizar Persuasivo em vez de Preciso em
+                        combate corpo a corpo.<br>
+                    
+                        <strong>Adepto:</strong> <i>Livre:</i> O personagem pode, com uma Ação
+                        Livre e um Teste bem-sucedido de <strong>[Persuasivo←Resoluto]</strong>, forçar um inimigo a hesitar em
+                        combate corpo a corpo. Um inimigo hesitante
+                        não irá atacar o personagem neste turno. Se
+                        possível, ele ataca um dos aliados do personagem em vez disso.<br>
+
+                        <strong>Mestre:</strong> <i>Ativa:</i>O personagem pode subjugar um inimigo com um Teste bem-sucedido de <strong>[Persuasivo←Resoluto]</strong>. Um inimigo subjugado pode ser
+                        forçado a desistir e negociar, a fugir de uma
+                        batalha em curso (se possível) ou render-se
+                        se for impossível fugir. Quando já estiver em
+                        combate, o inimigo primeiro deve ser ferido
+                        pelo personagem ou por um de seus aliados
+                        antes de ser subjugado.</td>
+                </tr>
+                <tr>
+                    <td>Líder</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>A forte personalidade lhe permite
+                        utilizar Persuasivo em vez de Resoluto ao tecer
+                        poderes místicos, embora não como base para
+                        seu limite de Corrupção.<br>
+                    
+                        <strong>Adepto:</strong> <i>Ativa:</i>O personagem pode nomear uma criatura ou objeto como alvo focado para ele e seus
+                        aliados pela duração de uma cena. Todos os
+                        aliados que atacarem o alvo infligem +1D4 de
+                        dano adicional a ele. Mudar de alvo requer uma
+                        nova Ação Ativa do Líder.<br>
+
+                        <strong>Mestre:</strong><i>Ativa:</i>O Líder faz um discurso motivacional
+                        para seus aliados, que lhes permite utilizar o
+                        Persuasivo dele ou dela em vez de seu próprio
+                        Resoluto pela duração de uma cena.</td>
+                </tr>
+                <tr>
+                    <td>Guerreiro Natural</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem aprendeu a utilizar
+                        suas capacidades de guerreiro nato com
+                        grande eficiência. Os ataques desarmados do
+                        personagem agora causam 1D6 de dano. Se a
+                        criatura também tiver o traço Armas Naturais,
+                        então o dano é aumentado de acordo com o
+                        nível desse traço monstruoso.<br>
+                    
+                        <strong>Adepto:</strong> <i>Ativa:</i> Com a velocidade de um Adepto, o
+                        personagem agora pode realizar um ataque
+                        duplo contra um único alvo. Os dois ataques
+                        são rolados separadamente.<br>
+
+                        <strong>Mestre:</strong><i>Passiva:</i>Ao atacar os pontos fracos de um
+                        oponente com uma precisão impecável — como
+                        na garganta e joelhos — os golpes desarmados do
+                        Mestre são verdadeiramente devastadores. Cada
+                        ataque que acerta causa 1D6 de dano extra.</td>
+                </tr>
+                <tr>
+                    <td>Maestria em Armas de Haste</td>
+                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas longas
+                        é aumentado em um passo, para 1D10 para
+                        lanças e alabardas e para 1D8 para cajados.<br>
+                    
+                        <strong>Adepto:</strong> <i>Reação:</i>O personagem realmente dominou
+                        a estocada longa. O personagem recebe um
+                        Ataque Livre contra todos os inimigos que entrarem no seu alcance de combate corpo a corpo — se é o inimigo quem engaja o personagem
+                        ou vice-versa, é irrelevante. A única exceção
+                        é quando o inimigo também empunha uma
+                        arma longa; em tal situação, o personagem não
+                        recebe um Ataque Livre.<br>
+
+                        <strong>Mestre:</strong><i>Reação:</i>Como um Mestre de armas longas,
+                        o personagem tem a habilidade de manter
+                        seus inimigos à distância. O personagem pode
+                        utilizar o Ataque Livre com uma arma de haste
+                        para impedir um inimigo de se aproximar para
+                        atacar. Enquanto o personagem obtiver sucesso em acertar o inimigo, o inimigo permanece
+                        incapaz de atacá-lo com armas corpo a corpo
+                        — independentemente de o dano penetrar ou
+                        não a armadura do inimigo.</td>
+                </tr>
+                <tr>
+                    <td>Acrobacias</td>
+                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem pode rolar contra
+                        Rápido para evitar Ataques Livres de inimigos
+                        em combate corpo a corpo, seja tentando simplesmente passar por um inimigo ou tentando
+                        recuar do combate corpo a corpo. Caso o Teste
+                        falhe, o jogador deve escolher permanecer em
+                        sua posição original ou se mover para qualquer
+                        lugar e sofrer um Ataque Livre do oponente.<br>
+                    
+                        <strong>Adepto:</strong> <i>Livre:</i>Caso o personagem seja derrubado, ele
+                        ou ela pode tentar saltar para trás novamente
+                        como uma Ação Livre realizando um Teste de
+                        Rápido. Se o Teste falhar, o personagem deve
+                        gastar uma Ação de Movimento normalmente
+                        para ficar de pé novamente.<br>
+
+                        <strong>Mestre:</strong><i>Reação:</i>O personagem pode utilizar seus inimigos como escudos em batalha. Em combate
+                        com mais de um oponente, o personagem
+                        pode, uma vez por turno, utilizar um inimigo
+                        como um escudo e fazer esse inimigo sofrer um
+                        golpe bem-sucedido no lugar do personagem.
+                        Esse oponente não pode se defender contra o
+                        ataque, mas o acrobata mestre deve realizar
+                        uma jogada bem-sucedida contra Rápido para
+                        o inimigo sofrer o golpe.</td>
+                </tr>
+                <tr>
+                    <td>Inabalável</td>
+                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem pode realizar uma
+                        segunda tentativa para obter sucesso em
+                        um Teste de Vigoroso ou Resoluto quando
+                        tentar quebrar um efeito físico contínuo:
+                        armadilhas ou elixires alquímicos. Isto inclui energias de poderes místicos, desde que
+                        sejam manifestadas fisicamente nas
+                        formas de fogo, ácido ou algo similar.<br>
+                    
+                        <strong>Adepto:</strong> <i>Reação:</i>O personagem é imperturbável, e
+                        pode realizar uma segunda tentativa para
+                        livrar-se de poderes contínuos que afetam sua
+                        vontade ou seus sentidos.<br>
+
+                        <strong>Mestre:</strong><i>Reação:</i>A psiquê do personagem contra-ataca
+                        qualquer um que tente afetá-la. Sempre que o
+                        personagem for vítima de um ataque mental
+                        (em outras palavras, ataques que são modificados por Resoluto) que falhar, o atacante sofre
+                        1D6 de dano que ignora Armadura.</td>
+                </tr>
+                <tr>
+                    <td>Atributo Excepcional</td>
+                    <td><strong>Novato: </strong> <i>Especial:</i>O personagem cultivou um de seus
+                        Atributos através de trabalho duro, que aumenta o Atributo em +1.<br>
+                    
+                        <strong>Adepto:</strong> <i>Especial:</i> Como Novato, mas a habilidade
+                        aumenta o valor do Atributo em +2 no total.<br>
+
+                        <strong>Mestre:</strong><i>Especial:</i>Como Novato, mas a habilidade
+                        aumenta o valor do Atributo em +3 no total.</td>
+                </tr>
+                <tr>
+                    <td>Recuperação</td>
+                    <td><strong>Novato: </strong> <i>Ativa:</i> Com uma jogada bem-sucedida contra
+                        Resoluto, o personagem recupera 1D4 de
+                        Vitalidade. Pode-se fazer várias tentativas,
+                        mas somente uma bem-sucedida é permitida
+                        por dia.<br>
+                    
+                        <strong>Adepto:</strong> <i>Ativa:</i>Assim como no nível Novato, mas o
+                        personagem recupera 1D6 de Vitalidade.<br>
+
+                        <strong>Mestre:</strong><i>Ativa:</i>Assim como no nível Novato, mas o
+                        personagem recupera 1D8 de Vitalidade.</td>
+                </tr>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </tbody>
+        </table>
+    </div>
+    <!-- Tabela Ladino Skills -->    
     <div class="ladino-skills">
         <h2>Habilidades Ladino</h2>
         <button onclick="toggleTable()">Expandir / Minimizar</button>
@@ -1357,389 +1668,77 @@
             </tbody>
         </table>
     </div>
-
-    <div class="guerreiro-skills">
-        <h2>Habilidades Guerreiro</h2>
-        <button onclick="toggleTTTTable()">Expandir / Minimizar</button>
-        <table id="guerreiroTable" style="display: none;">
-            <thead>
-                <tr>
-                    <th>Habilidade</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Estrangulador</td>
-                    <td><strong>Novato: </strong> <i>Ativa:</i>Atacar
-                        com Vantagem. Um ataque bem-sucedido causa 1D6 de dano a cada turno e ignora
-                        Armadura. O alvo não pode agir até que o
-                        domínio do Estrangulador seja removido; o
-                        personagem mantém o estrangulamento com
-                        um Teste bem-sucedido de <strong>[Astuto←Astuto]</strong>. <br>
-                    
-                        <strong>Adepto: </strong> <i>Ativa:</i>O personagem sabe como utilizar os
-                        mortais Esporos Sufocantes, colhidos nas
-                        profundezas da Davokar por alquimistas. Com
-                        um Teste bem-sucedido de <strong>[Astuto←Rápido]</strong>,
-                        os esporos são arremessados em um inimigo
-                        e causam 1D4 de dano por turno durante 1D4
-                        turnos, ignorando a Armadura. Não há contramedida contra o efeito de Esporos Sufocantes
-                        além de curar a vítima quando o dano ocorre.
-                        Vítimas afetadas podem agir normalmente, ao
-                        contrário do nível Novato desta habilidade. <br>
-
-                        <strong>Mestre: </strong> <i>Ativa:</i>O personagem pode utilizar as delicadas
-                        e letais Bombas de Esporos criadas a partir de
-                        Esporos Sufocantes por mestres alquimistas.
-                        Elas podem ser usadas a distância. É necessário um Teste bem-sucedido de Astuto para a
-                        bomba aterrissar no local pretendido. A Bomba
-                        de Esporos preenche um corredor, uma área
-                        menor ou uma sala comum com uma nuvem
-                        sufocante. Qualquer um que estiver na área,
-                        tanto inimigos quanto aliados, são afetados
-                        pelos Esporos Sufocantes, que ignoram a
-                        Armadura e causam 1D4 de dano por turno
-                        durante 1D4 turnos. 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Combatente de Escudo</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas empunhadas no braço da espada do personagem é 
-                        aumentado em um passo; para 1D10 se o personagem luta com uma arma de uma mão ou para 
-                        1D8 se luta com uma arma Curta. O Combatente 
-                        de Escudo Novato empunha seu escudo como 
-                        um instrumento de proteção com maior eficiência e, portanto, recebe +2 de bônus de Defesa em 
-                        vez do +1 normal quando utiliza um escudo.<br>
-                    
-                        <strong>Adepto: </strong> <i>Reação:</i>O personagem aprendeu tão bem 
-                        a como combinar arma e escudo, que todo 
-                        ataque bem-sucedido pode ser seguido por 
-                        uma pancada com escudo contra o mesmo 
-                        alvo. O dano da pancada com escudo é de 1D4, 
-                        e se o personagem obtiver sucesso em um 
-                        Teste de <strong>[Vigoroso←Vigoroso]</strong>, O alvo também 
-                        é derrubado no chão.<br>
-
-                        <strong>Mestre: </strong><i>Reação:</i>O dano da pancada com escudo é 
-                        aumentado de 1D4 para 1D8 e o alvo ainda é 
-                        derrubado no chão se o personagem obtiver 
-                        sucesso em um Teste de <strong>[Vigoroso←Vigoroso]</strong>. 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Força da Empunhadura Dupla</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas pesadas é 
-                        aumentado para 1D12.<br>
-                    
-                        <strong>Adepto: </strong> <i>Reação :</i> O personagem dominou a utilização 
-                        de sua arma, portanto, quando um ataque 
-                        erra um alvo, o personagem pode utilizar o movimento de retorno do ataque para tentar 
-                        acertar o alvo novamente. O personagem realiza uma nova jogada de ataque, que causa 1D8 
-                        de dano se acertar.<br>
-
-                        <strong>Mestre: </strong><i>Ativa:</i>Uma arma pesada nas mãos de um Mestre é uma verdadeira ferramenta de destruição 
-                        de armaduras. Quando o ataque de um Mestre 
-                        atinge seu alvo, ele ignora completamente a 
-                        Armadura do alvo. 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Ataque Gêmeo</td>
-                    <td><strong>Novato: </strong> <i>Ativa:</i>. O personagem pode empunhar duas
-                        armas com segurança, uma em cada mão. O
-                        Novato pode lutar com uma arma de uma mão
-                        em sua mão primária e uma arma Curta na outra.
-                        O personagem pode realizar dois ataques
-                        no mesmo alvo, causando 1D8 e 1D6 de dano
-                        respectivamente. O inimigo deve se defender
-                        separadamente contra os ataques. O Novato
-                        também recebe +1 de bônus em sua Defesa
-                        como uma habilidade Passiva, mas somente quando empunhar uma arma em cada mão<br>
-                    
-                        <strong>Adepto:</strong> <i>Ativa:</i>O Adepto pode utilizar duas armas de
-                        uma mão, cada uma causando 1D8 de dano.<br>
-
-                        <strong>Mestre:</strong><i>Ativa:</i>Com a perícia de um Mestre, o dano
-                        causado pela arma da mão primária é 1D10,
-                        enquanto a arma na outra mão causa 1D8.</td>
-                </tr>
-                <tr>
-                    <td>Saque Rápido</td>
-                    <td><strong>Novato: </strong> <i>Livre:</i>Com uma jogada bem-sucedida contra 
-                        Rápido, o personagem pode desembainhar e 
-                        sacar uma arma como uma Ação Livre, assim 
-                        sendo capaz de utilizar a arma como se ela já 
-                        estivesse sacada. O personagem também pode 
-                        recarregar uma besta como uma Ação Livre 
-                        com um Teste bem-sucedido de Rápido.<br>
-                    
-                        <strong>Adepto:</strong> <i>Livre:</i>Com um Teste bem-sucedido de Rápido, 
-                        o personagem pode trocar de armas como uma 
-                        Ação Livre, significando que o personagem 
-                        pode embainhar uma arma e sacar outra em um 
-                        movimento fluido.<br>
-
-                        <strong>Mestre:</strong> <i>Livre:</i>O personagem manuseia elixires rapidamente e pode, com um Teste bem-sucedido de 
-                        Rápido, derramar uma dose em si mesmo ou na 
-                        garganta de alguém como uma Ação Livre.</td>
-                </tr>
-                <tr>
-                    <td>Guarda-Costas</td>
-                    <td><strong>Novato: </strong> <i>Reação:</i>Com um teste de Resoluto
-                        bem-sucedido, o personagem pode sofrer 
-                       golpes direcionados contra um aliado. O personagem não pode se defender contra estes 
-                       ataques; eles acertam automaticamente.<br>
-                    
-                        <strong>Adepto:</strong><i>Reação:</i>Como Novato, mas a capacidade do 
-                        personagem como um guardião lhe permite se 
-                        defender contra todos os ataques mirados na 
-                        pessoa que ele ou ela está protegendo.<br>
-
-                        <strong>Mestre:</strong><i>Reação:</i>Como Adepto, mas o personagem 
-                        é um autêntico santo guardião. O personagem pode não apenas se defender contra os 
-                        ataques, mas também recebe um Ataque Livre 
-                        contra qualquer um que realizar uma ofensiva 
-                        contra a pessoa sob sua proteção.</td>
-                </tr>
-                <tr>
-                    <td>Amoque</td>
-                    <td><strong>Novato: </strong> <i>Livre:</i> O personagem pode, com uma Ação 
-                        Livre, entrar em um frenesi assassino que foca 
-                        unicamente em ferir o inimigo, causando 1D6 
-                        de dano extra quando luta em combate corpo 
-                        a corpo. A desvantagem deste frenesi é que o 
-                        personagem não pode se defender apropriadamente. O Rápido do personagem é considerado 
-                        5 quando calculando sua Defesa.<br>
-                    
-                        <strong>Adepto:</strong> <i>Reação:</i> Esta fúria é como armadura para o 
-                        personagem. Ele ou ela ignora 1D4 de dano 
-                        de cada golpe sofrido enquanto estiver em 
-                        fúria amoque.<br>
-
-                        <strong>Mestre:</strong> <i>Livre:</i>O personagem aprendeu a lidar com sua 
-                        fúria sem perder nada de seu poder. O personagem pode utilizar a capacidade de causar 
-                        e ignorar dano enquanto ainda é capaz e se 
-                        defender normalmente.</td>
-                </tr>
-                <tr>
-                    <td>Punho de Ferro</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem pode utilizar totalmente sua força, portanto utiliza Vigoroso em vez 
-                        de Preciso quando realiza um ataque corpo a 
-                        corpo.<br>
-                    
-                        <strong>Adepto:</strong> <i>Passiva:</i>Os ataques corpo a corpo do personagem agora causam +1D4 de dano adicional.<br>
-
-                        <strong>Mestre:</strong> <i>Ativa:</i>O personagem sabe como realmente 
-                        colocar sua força em um ataque. O personagem pode executar um ataque corpo a corpo 
-                        devastador uma vez por turno que causa +1D8 
-                        em vez de +1D4 de dano adicional. </strong>.</td>
-                </tr>
-                <tr>
-                    <td>Equestre</td>
-                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem é um cavaleiro experiente e acostumado a lutar montado. O personagem sabe como utilizar o peso da montaria 
-                        em uma investida de cavalaria e causa +1D6 de 
-                        dano adicional com um ataque corpo a corpo 
-                        se a montaria se mover antes do ataque.<br>
-                    
-                        <strong>Adepto:</strong> <i>Ativa:</i>O elo entre uma montaria e seu cavaleiro torna possível que realizem ataques de 
-                        passagem, significando que podem utilizar 
-                        parte de sua Ação de Movimento antes de 
-                        atacar, e o restante após. Desta forma, são 
-                        capazes de realizar um ataque corpo a corpo 
-                        sem ficarem presos ao combate. O inimigo 
-                        pode retaliar apenas utilizando Reações ou 
-                        gastando sua Ação de Movimento tentando 
-                        alcançar o cavaleiro.<br>
-
-                        <strong>Mestre:</strong><i>Ativa:</i>O cavaleiro Mestre pode utilizar uma 
-                        investida de cavalaria ainda mais eficientemente, portanto, causa +1D10 de dano com um 
-                        ataque corpo a corpo se a montaria se mover 
-                        antes do ataque.</td>
-                </tr>
-                <tr>
-                    <td>Homem-de-Armas</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem sabe como utilizar sua 
-                        armadura para efeito máximo, o que aumenta o 
-                        nível da Armadura em um passo: armaduras leves protegem 1D6, armaduras médias protegem 
-                        1D8 e armaduras pesadas protegem 1D10.<br>
-                    
-                        <strong>Adepto:</strong> <i>Passiva:</i>O personagem é acostumado a vestir 
-                        armaduras e pode adaptar suas ações às limitações delas. A armadura não tem mais efeito 
-                        negativo em Rápido ou em habilidades baseadas 
-                        em Rápido (incluindo Defesa). A qualidade Obstrutiva da armadura ainda tem efeito negativo ao 
-                        usar poderes místicos.<br>
-
-                        <strong>Mestre:</strong><i>Reação:</i>O personagem pode rolar contra Rápido
-                        para neutralizar habilidades ou equipamentos 
-                        que fazem com que ataques inimigos ignorem ou 
-                        reduzam seu valor de Armadura; se o Teste for 
-                        bem-sucedido, a Armadura protege normalmente. Poderes místicos que ignoram Armadura não 
-                        podem ser bloqueados desta maneira; eles não 
-                        são afetados pela habilidade Homem-de-Armas</td>
-                </tr>
-                <tr>
-                    <td>Dominação</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem pode dominar e
-                        manobrar um combatente inimigo utilizando
-                        sua personalidade convincente. O personagem
-                        pode utilizar Persuasivo em vez de Preciso em
-                        combate corpo a corpo.<br>
-                    
-                        <strong>Adepto:</strong> <i>Livre:</i> O personagem pode, com uma Ação
-                        Livre e um Teste bem-sucedido de <strong>[Persuasivo←Resoluto]</strong>, forçar um inimigo a hesitar em
-                        combate corpo a corpo. Um inimigo hesitante
-                        não irá atacar o personagem neste turno. Se
-                        possível, ele ataca um dos aliados do personagem em vez disso.<br>
-
-                        <strong>Mestre:</strong> <i>Ativa:</i>O personagem pode subjugar um inimigo com um Teste bem-sucedido de <strong>[Persuasivo←Resoluto]</strong>. Um inimigo subjugado pode ser
-                        forçado a desistir e negociar, a fugir de uma
-                        batalha em curso (se possível) ou render-se
-                        se for impossível fugir. Quando já estiver em
-                        combate, o inimigo primeiro deve ser ferido
-                        pelo personagem ou por um de seus aliados
-                        antes de ser subjugado.</td>
-                </tr>
-                <tr>
-                    <td>Líder</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>A forte personalidade lhe permite
-                        utilizar Persuasivo em vez de Resoluto ao tecer
-                        poderes místicos, embora não como base para
-                        seu limite de Corrupção.<br>
-                    
-                        <strong>Adepto:</strong> <i>Ativa:</i>O personagem pode nomear uma criatura ou objeto como alvo focado para ele e seus
-                        aliados pela duração de uma cena. Todos os
-                        aliados que atacarem o alvo infligem +1D4 de
-                        dano adicional a ele. Mudar de alvo requer uma
-                        nova Ação Ativa do Líder.<br>
-
-                        <strong>Mestre:</strong><i>Ativa:</i>O Líder faz um discurso motivacional
-                        para seus aliados, que lhes permite utilizar o
-                        Persuasivo dele ou dela em vez de seu próprio
-                        Resoluto pela duração de uma cena.</td>
-                </tr>
-                <tr>
-                    <td>Guerreiro Natural</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O personagem aprendeu a utilizar
-                        suas capacidades de guerreiro nato com
-                        grande eficiência. Os ataques desarmados do
-                        personagem agora causam 1D6 de dano. Se a
-                        criatura também tiver o traço Armas Naturais,
-                        então o dano é aumentado de acordo com o
-                        nível desse traço monstruoso.<br>
-                    
-                        <strong>Adepto:</strong> <i>Ativa:</i> Com a velocidade de um Adepto, o
-                        personagem agora pode realizar um ataque
-                        duplo contra um único alvo. Os dois ataques
-                        são rolados separadamente.<br>
-
-                        <strong>Mestre:</strong><i>Passiva:</i>Ao atacar os pontos fracos de um
-                        oponente com uma precisão impecável — como
-                        na garganta e joelhos — os golpes desarmados do
-                        Mestre são verdadeiramente devastadores. Cada
-                        ataque que acerta causa 1D6 de dano extra.</td>
-                </tr>
-                <tr>
-                    <td>Maestria em Armas de Haste</td>
-                    <td><strong>Novato: </strong> <i>Passiva:</i>O dano causado por armas longas
-                        é aumentado em um passo, para 1D10 para
-                        lanças e alabardas e para 1D8 para cajados.<br>
-                    
-                        <strong>Adepto:</strong> <i>Reação:</i>O personagem realmente dominou
-                        a estocada longa. O personagem recebe um
-                        Ataque Livre contra todos os inimigos que entrarem no seu alcance de combate corpo a corpo — se é o inimigo quem engaja o personagem
-                        ou vice-versa, é irrelevante. A única exceção
-                        é quando o inimigo também empunha uma
-                        arma longa; em tal situação, o personagem não
-                        recebe um Ataque Livre.<br>
-
-                        <strong>Mestre:</strong><i>Reação:</i>Como um Mestre de armas longas,
-                        o personagem tem a habilidade de manter
-                        seus inimigos à distância. O personagem pode
-                        utilizar o Ataque Livre com uma arma de haste
-                        para impedir um inimigo de se aproximar para
-                        atacar. Enquanto o personagem obtiver sucesso em acertar o inimigo, o inimigo permanece
-                        incapaz de atacá-lo com armas corpo a corpo
-                        — independentemente de o dano penetrar ou
-                        não a armadura do inimigo.</td>
-                </tr>
-                <tr>
-                    <td>Acrobacias</td>
-                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem pode rolar contra
-                        Rápido para evitar Ataques Livres de inimigos
-                        em combate corpo a corpo, seja tentando simplesmente passar por um inimigo ou tentando
-                        recuar do combate corpo a corpo. Caso o Teste
-                        falhe, o jogador deve escolher permanecer em
-                        sua posição original ou se mover para qualquer
-                        lugar e sofrer um Ataque Livre do oponente.<br>
-                    
-                        <strong>Adepto:</strong> <i>Livre:</i>Caso o personagem seja derrubado, ele
-                        ou ela pode tentar saltar para trás novamente
-                        como uma Ação Livre realizando um Teste de
-                        Rápido. Se o Teste falhar, o personagem deve
-                        gastar uma Ação de Movimento normalmente
-                        para ficar de pé novamente.<br>
-
-                        <strong>Mestre:</strong><i>Reação:</i>O personagem pode utilizar seus inimigos como escudos em batalha. Em combate
-                        com mais de um oponente, o personagem
-                        pode, uma vez por turno, utilizar um inimigo
-                        como um escudo e fazer esse inimigo sofrer um
-                        golpe bem-sucedido no lugar do personagem.
-                        Esse oponente não pode se defender contra o
-                        ataque, mas o acrobata mestre deve realizar
-                        uma jogada bem-sucedida contra Rápido para
-                        o inimigo sofrer o golpe.</td>
-                </tr>
-                <tr>
-                    <td>Inabalável</td>
-                    <td><strong>Novato: </strong> <i>Reação:</i>O personagem pode realizar uma
-                        segunda tentativa para obter sucesso em
-                        um Teste de Vigoroso ou Resoluto quando
-                        tentar quebrar um efeito físico contínuo:
-                        armadilhas ou elixires alquímicos. Isto inclui energias de poderes místicos, desde que
-                        sejam manifestadas fisicamente nas
-                        formas de fogo, ácido ou algo similar.<br>
-                    
-                        <strong>Adepto:</strong> <i>Reação:</i>O personagem é imperturbável, e
-                        pode realizar uma segunda tentativa para
-                        livrar-se de poderes contínuos que afetam sua
-                        vontade ou seus sentidos.<br>
-
-                        <strong>Mestre:</strong><i>Reação:</i>A psiquê do personagem contra-ataca
-                        qualquer um que tente afetá-la. Sempre que o
-                        personagem for vítima de um ataque mental
-                        (em outras palavras, ataques que são modificados por Resoluto) que falhar, o atacante sofre
-                        1D6 de dano que ignora Armadura.</td>
-                </tr>
-                <tr>
-                    <td>Atributo Excepcional</td>
-                    <td><strong>Novato: </strong> <i>Especial:</i>O personagem cultivou um de seus
-                        Atributos através de trabalho duro, que aumenta o Atributo em +1.<br>
-                    
-                        <strong>Adepto:</strong> <i>Especial:</i> Como Novato, mas a habilidade
-                        aumenta o valor do Atributo em +2 no total.<br>
-
-                        <strong>Mestre:</strong><i>Especial:</i>Como Novato, mas a habilidade
-                        aumenta o valor do Atributo em +3 no total.</td>
-                </tr>
-                <tr>
-                    <td>Recuperação</td>
-                    <td><strong>Novato: </strong> <i>Ativa:</i> Com uma jogada bem-sucedida contra
-                        Resoluto, o personagem recupera 1D4 de
-                        Vitalidade. Pode-se fazer várias tentativas,
-                        mas somente uma bem-sucedida é permitida
-                        por dia.<br>
-                    
-                        <strong>Adepto:</strong> <i>Ativa:</i>Assim como no nível Novato, mas o
-                        personagem recupera 1D6 de Vitalidade.<br>
-
-                        <strong>Mestre:</strong><i>Ativa:</i>Assim como no nível Novato, mas o
-                        personagem recupera 1D8 de Vitalidade.</td>
-                </tr>
-                <!-- Adicione mais habilidades conforme necessário -->
-            </tbody>
-        </table>
-    </div>
+            <!-- Tabela de Equipamentos -->
+            <div class="equipments">
+                <h2>Armas/Equipamentos [Pág 149]</h2>
+                <img src="imagens/equipamentos.png" alt="Tabela de Equipamentos" style="width:100%; max-width:600px;">
+            </div>
+    
+        <!-- Tabela de Qualidade -->
+        <div class="equipments">
+            <h2>Qualidade dos Equipamentos [Pág 152] </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualidade</th>
+                        <th>Efeito</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Articulada</td>
+                        <td>Sem modificadores</td>
+                        <td>Não entendi, mucho texto</td>
+                    </tr>
+                    <tr>
+                        <td>Contundente</td>
+                        <td>-1 passo no dado da arma [exemplo: bastão da 1d6 inves de 1d8]</td>
+                        <td>Nao tem habilidade C ou P.</td>
+                    </tr>
+                    <tr>
+                        <td>Curta</td>
+                        <td>Sem modificadores</td>
+                        <td>Pode Sacar como ação Livre ou com Fintar</td>
+                    </tr>
+                    <tr>
+                        <td>Desajeitada</td>
+                        <td>Sem modificadores</td>
+                        <td>Dificil de se mover, logo ganha efeitos negativos em Defesa; Leve (-3 penalidade), Media (-4), Pesada (-5)</td>
+                    </tr>
+                    <tr>
+                        <td>Equilibrada</td>
+                        <td>Ganha +1 na Defesa</td>
+                        <td>Equilibrio foda. E é mais efetiva quando vc aparar, ai vc ganha o efeito.</td>
+                    </tr>
+                    <tr>
+                        <td>Flexivel</td>
+                        <td>mucho texto</td>
+                        <td>Não sofre penalidade nos testes de defesa,furtivo e etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Imapcto Profundo</td>
+                        <td>+1 de Dano</td>
+                        <td>A arma fica mais fodona dos games mortal, pode perfurar armadura.</td>
+                    </tr>
+                    <tr>
+                        <td>Longa</td>
+                        <td>Ataca de mais longe que o comum (obv né krl é longa a arma) ganha Att Livre.</td>
+                        <td>Ganha att Livre quando alguem esta corpo-a-corpo com vc e nao esteja utilizando uma arma longa tbm.</td>
+                    </tr>
+                    <tr>
+                        <td>Obstrutiva</td>
+                        <td>Penalidade em Teste de Defesa, furtividade e poderes misticos</td>
+                        <td>Armadura do Ravel, logo tu faz tudo lento pa krl</td>
+                    </tr>
+                    <tr>
+                        <td>Precisa</td>
+                        <td>+1 em Teste de Att</td>
+                        <td>Arma é facil de enpunhar.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <!-- Rodapé -->
