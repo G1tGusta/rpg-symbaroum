@@ -127,6 +127,8 @@ table th {
 table td {
     background-color: #ffffff; /* Fundo branco para as células da tabela */
 }
+
+/* Estilo para a Tabela de Raças */
 .race-table {
     background-color: #d9e9d3; /* Fundo claro para a seção */
     padding: 20px;
@@ -251,3 +253,4 @@ table td {
 .ladino-skills button:hover {
     background-color: #290101; /* Cor mais escura ao passar o mouse */
 }
+
