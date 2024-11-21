@@ -107,7 +107,7 @@ header h1 {
 /* Estilo para as Divs dos Textos */
 
 .history-content .terras {
-    background-color: #eaf4f9; /* Fundo azul claro */
+    background-color: #ebebeb; /* Fundo azul claro */
     border: 2px solid #457b9d; /* Azul escuro */
     padding: 20px;
     margin-bottom: 20px;
@@ -125,14 +125,93 @@ header h1 {
 }
 
 .history-content .vidas {
-    background-color: #ffd7fc; /* Fundo rosa claro */
+    background-color: #ebebeb; /* Fundo rosa claro */
     border: 2px solid #9a30f1; /* Vermelho forte */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.history-content .povos {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #0e9bec; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .espiritualidade {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #b321ab; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .cultura {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #8629d3; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .conflitos {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #d12869; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_nobre {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #f19730; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_barbaros {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #f15d30; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_prios {
+    background-color: #ece4d6; /* Fundo rosa claro */
+    border: 2px solid #19b332; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_ordomagica {
+    background-color: #ece4d6; /* Fundo rosa claro */
+    border: 2px solid #2d91d3; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_exercitorainha {
+    background-color: #ece4d6; /* Fundo rosa claro */
+    border: 2px solid #7dd32d; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.history-content .faccoes_pactoferro {
+    background-color: #ece4d6; /* Fundo rosa claro */
+    border: 2px solid #ca1414; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* Títulos das Divs */
 .history-content .rainha h2 {
@@ -149,6 +228,80 @@ header h1 {
 
 .history-content .vidas h2 {
     color: #9a30f1; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .povos h2 {
+    color: #0e9bec; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .espiritualidade h2 {
+    color: #b321ab; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .cultura h2 {
+    color: #8629d3; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.history-content .conflitos h2 {
+    color: #d12869; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+/* TITULOS NOBRES */
+.history-content .faccoes_nobre h2 {
+    color: #cf8229; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_nobre h3{
+    color: #cf8229; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_nobre h4{
+    color: #cf8229; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+/* TITULOS BARBAROS */
+.history-content .faccoes_barbaros h2 {
+    color: #d43403; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_barbaros h3 {
+    color: #d43403; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_barbaros h4 {
+    color: #d43403; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+/* TITULOS PRIOS */
+.history-content .faccoes_prios h3 {
+    color: #16a02d; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_ordomagica h3 {
+    color: #267bb4; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_exercitorainha h3 {
+    color: #67ad25; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.history-content .faccoes_pactoferro h3 {
+    color: #ca1414; /* Vermelho forte */
     font-size: 1.8em;
     margin-bottom: 10px;
 }
@@ -214,7 +367,6 @@ main {
 .notepad h2 {
     font-size: 1.8em;
     color: #70a163; /* Mudado para verde */
-    border-bottom: 2px solid #70a163; /* Mudado para verde */
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -422,8 +574,23 @@ table td {
 .ladino-skills button:hover {
     background-color: #290101; /* Cor mais escura ao passar o mouse */
 }
-
+/* Estilo do Botão Raça */
 .race-table button {
+    background-color: #70a163; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.race-table button:hover {
+    background-color: #4b6b42; /* Cor mais escura ao passar o mouse */
+}
+.r-table button {
     background-color: #70a163; /* Cor verde para o botão */
     color: #f4f1e6;
     padding: 10px 20px;
@@ -475,7 +642,7 @@ table td {
 .mistico-skills td {
     background-color: #ffffff; /* Fundo branco para as células */
 }
-
+/* Estilo do Botão Mistico */
 .mistico-skills button {
     background-color: #2a71cf; /* Cor verde para o botão */
     color: #f4f1e6;
@@ -545,6 +712,193 @@ table td {
     background-color: #b68809; /* Cor mais escura ao passar o mouse */
 }
 
+/* Estilo do Botão Rainha */
+.rainha button {
+    background-color: #292929; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.rainha button:hover {
+    background-color: #161616; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Terras Prometidas */
+.terras button {
+    background-color: #457b9d; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.terras button:hover {
+    background-color: #2d546d; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Meios de Vida */
+.vidas button {
+    background-color: #8b2cda; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.vidas button:hover {
+    background-color: #6a1fa7; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Povos */
+.povos button {
+    background-color: #0e9bec; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.povos button:hover {
+    background-color: #0970ac; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Espiritualidade */
+.espiritualidade button {
+    background-color: #b321ab; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.espiritualidade button:hover {
+    background-color: #6d1068; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Casas da Nobreza */
+.faccoes_nobre button {
+    background-color: #f19730; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_nobre button:hover {
+    background-color: #ac6b21; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Clãs Bárbaros */
+.faccoes_barbaros button {
+    background-color: #ff3c00; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_barbaros button:hover {
+    background-color: #a32600; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão A Igreja de Prios */
+.faccoes_prios button {
+    background-color: #19b332; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_prios button:hover {
+    background-color: #095015; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão Ordo Magica */
+.faccoes_ordomagica button {
+    background-color: #2d91d3; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_ordomagica button:hover {
+    background-color: #123e5c; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão O Exercito da Rainha */
+.faccoes_exercitorainha button {
+    background-color: #7dd32d; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_exercitorainha button:hover {
+    background-color: #335711; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do Botão O Pacto de Ferro */
+.faccoes_pactoferro button {
+    background-color: #ca1414; /* Cor verde para o botão */
+    color: #f4f1e6;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.faccoes_pactoferro button:hover {
+    background-color: #4d0505; /* Cor mais escura ao passar o mouse */
+}
+
 /* Estilos para a div com o parágrafo */
 .styled-paragraph {
     background-color: #f0f0f0; /* Cor de fundo suave */
@@ -576,11 +930,4 @@ table td {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
-/* Estilo do parágrafo dentro da div */
-.styled2-paragraph p {
-    color: #333; /* Cor do texto */
-    font-size: 1.2em; /* Tamanho do texto */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    text-align: justify; /* Alinhamento justificado */
-    font-family: 'Arial', sans-serif; /* Fonte do texto */
-}
+
