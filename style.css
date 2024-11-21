@@ -20,6 +20,40 @@ header {
     text-align: center;
     padding: 20px;
 }
+/* Cabeçalho da pagina HISTORIA */
+.header_historia {
+    background: #064c7a; /* Mudado para verde */
+    color: #f4f1e6;
+    text-align: center;
+    padding: 20px;
+}
+/* Main da pagina HISTORIA */
+.main_historia {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f5e3;
+    border: 2px solid #07588f; /* Mudado para verde */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Cabeçalho da pagina COMBATE*/
+.header_combate {
+    background: #791212; /* Mudado para verde */
+    color: #f4f1e6;
+    text-align: center;
+    padding: 20px;
+}
+/* Main da pagina COMBATE */
+.main_combate {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f5e3;
+    border: 2px solid #721212; /* Mudado para verde */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 .header-title {
     display: flex;
@@ -33,6 +67,134 @@ header h1 {
     font-family: 'Cinzel', serif;
     margin-bottom: 10px;
 }
+
+/* Caixa de Direcionamento */
+.history-box {
+    background-color: #fff;
+    color: #0e74b8;
+    border: 2px solid #08598f;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.history-box:hover {
+    background-color: #2693db;
+    color: #fff;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+
+/* Estilo da Página da História */
+.history-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f5e3;
+    border: 2px solid #f9f5e3;
+    border-radius: 8px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+
+/* Estilo para as Divs dos Textos */
+
+.history-content .terras {
+    background-color: #eaf4f9; /* Fundo azul claro */
+    border: 2px solid #457b9d; /* Azul escuro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-content .rainha {
+    background-color: #ebebeb; /* Fundo rosa claro */
+    border: 2px solid #292929; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-content .vidas {
+    background-color: #ffd7fc; /* Fundo rosa claro */
+    border: 2px solid #9a30f1; /* Vermelho forte */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Títulos das Divs */
+.history-content .rainha h2 {
+    color: #292929; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.history-content .terras h2 {
+    color: #457b9d; /* Azul escuro */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.history-content .vidas h2 {
+    color: #9a30f1; /* Vermelho forte */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+
+/* Caixa de combate */
+.combate-box {
+    background-color: #fff;
+    color: #b80e0e;
+    border: 2px solid #5a0606;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.combate-box:hover {
+    background-color: #920707;
+    color: #fff;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+/* Caixa de index */
+.index-box {
+    background-color: #fff;
+    color: #44663b;
+    border: 2px solid #2b4225;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.index-box:hover {
+    background-color: #428f2b;
+    color: #fff;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
 
 /* Seção de Anotações */
 main {
@@ -386,7 +548,7 @@ table td {
 /* Estilos para a div com o parágrafo */
 .styled-paragraph {
     background-color: #f0f0f0; /* Cor de fundo suave */
-    border: 2px solid #70a163; /* Borda verde suave */
+    border: 2px solid #791212; /* Borda verde suave */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno */
     max-width: 600px; /* Largura máxima */
@@ -406,7 +568,7 @@ table td {
 /* Estilos para a div com o parágrafo */
 .styled2-paragraph {
     background-color: #f0f0f0; /* Cor de fundo suave */
-    border: 2px solid #70a163; /* Borda verde suave */
+    border: 2px solid #791212; /* Borda verde suave */
     border-radius: 8px; /* Bordas arredondadas */
     padding: 15px; /* Espaçamento interno */
     max-width: 600px; /* Largura máxima */
