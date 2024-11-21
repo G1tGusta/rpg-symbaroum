@@ -5,52 +5,367 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História do Mundo de Symbaroum</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <header class="header_historia">
         <h1>Contos do Mundo de Symbaroum</h1>
         <p>Olá aventureiro, aqui você irá aprender os contos antigos da grande floresta de Davokar e como tudo começou. </p>
-        <div class="index-box" onclick="location.href='index.html';"> Voltar para Taverna </div>
-        <div class="combate-box" onclick="location.href='combate.html';"> Como o Combate Funciona </div>
+        <div class="index-box" onclick="location.href='index.html';"> Ir para Taverna </div>
+        <div class="combate-box" onclick="location.href='combate.html';"> Ir para Arena  </div>
+
     </header>
     <main class="main_historia">
         <section class="history-content">
             <div class="rainha"> 
-            <h2> RETORNO DA RAINHA </h2>
-            <p> Uma grande guerra ocorreu e durou 20 anos, deixando mortos, fome e magia de morte no reino. 
-                A Rainha foi resgatada, mas, retornou como uma sombra com uma mascara cobrindo o rosto. 
-                21 anos depois o seu reino estava morrendo e mandou todos para o norte onde tinha uma terra mais fértil. As terras eram controladas por bárbaros e 
-                anteriormente por “Lindaros” a cidade-estado que foi jogado uma doença hemorrágica causada por celestiais há 200 anos. Após uma guerra Korinthia 
-                reconstruiu “Lindaros” com prisioneiros de guerra, voluntários e refugiados, em “Lindaros” um pequeno grupo bárbaro chamado clã Kadiz foi expulso dos 
-                seus território em Davokar a 50 anos, mas se curvaram e se juntaram na construção de “Lindaros”.</p> <br>
+                <h2> RETORNO DA RAINHA </h2>
+                <button onclick="toggleRainhaTable()">Expandir / Minimizar</button>
+                    <div id="rainhaTable" style="display: none;"> <br>
+                        <p> Uma grande guerra ocorreu e durou 20 anos, deixando mortos, fome e magia de morte no reino. 
+                            A Rainha foi resgatada, mas, retornou como uma sombra com uma mascara cobrindo o rosto. 
+                            21 anos depois o seu reino estava morrendo e mandou todos para o norte onde tinha uma terra mais fértil. As terras eram controladas por bárbaros e 
+                            anteriormente por “Lindaros” a cidade-estado que foi jogado uma doença hemorrágica causada por celestiais há 200 anos. Após uma guerra Korinthia 
+                            reconstruiu “Lindaros” com prisioneiros de guerra, voluntários e refugiados, em “Lindaros” um pequeno grupo bárbaro chamado clã Kadiz foi expulso dos 
+                            seus território em Davokar a 50 anos, mas se curvaram e se juntaram na construção de “Lindaros”.</p> <br>
 
-            <p> Rainha Korinthia se uniu aos refugiados e fundou Ambria “o brilhante”, e nomeou sua capital de “Yndaros”.
-                Alguns Anos depois um lorde de guerra bárbaro Haloban foram derrotados e com isso Korinthia teve a chance de explorar as florestas de Davokar a suas riquezas.
-                Os povos bárbaros obedientes se tornaram escravos e os não obedientes foram mortos ou banidos. O processo de construção de Ambria resultou em milhares de mortos, 
-                mas não se conta sobre esse assunto. Depois 7 Anos depois o rei Lasifor estabeleceu a cidade “Forte do Cardo” para explorar as florestas de Davokar e ajudar a 
-                mãe da Rainha Korinthia com uma erva rara.
-            </p>
+                        <p> Rainha Korinthia se uniu aos refugiados e fundou Ambria “o brilhante”, e nomeou sua capital de “Yndaros”.
+                            Alguns Anos depois um lorde de guerra bárbaro Haloban foram derrotados e com isso Korinthia teve a chance de explorar as florestas de Davokar a suas riquezas.
+                            Os povos bárbaros obedientes se tornaram escravos e os não obedientes foram mortos ou banidos. O processo de construção de Ambria resultou em milhares de mortos, 
+                            mas não se conta sobre esse assunto. Depois 7 Anos depois o rei Lasifor estabeleceu a cidade “Forte do Cardo” para explorar as florestas de Davokar e ajudar a 
+                            mãe da Rainha Korinthia com uma erva rara.
+                        </p>
+                    </div>
             </div>
             <div class="terras">
-            <h2> TERRA PROMETIDA </h2>
-            <p> A região que Korinthia quer conquistar é dominada pela floresta de Davokar, extensa e perigosa. 
-                O sul dessa floresta é uma planície fértil com colinas suaves, onde está localizado Ambria, um reino dividido em sete ducados. 
-                Korinthia é o maior ducado, com a cidade de Yndaros como capital. A região é cercada por montanhas selvagens e majestosas, 
-                como as Titãs ao sul e as Corvos ao leste. As montanhas são refúgio para salteadores, pensadores livres e bárbaros rebeldes.
-            </p> <br>
-            <p> O reino anão de Küam Zamok parece ser indiferente aos humanos, com exceção de algumas famílias em Yndaros. 
-                O clima na região é mais frio e úmido do que os ambrianos estão acostumados, com invernos gelados e chuvas pesadas, principalmente durante o outono. 
-                Os invernos, conhecidos como Istaros, trazem ventos árticos do norte que congelam o sangue nas veias de qualquer um que se aventure ao relento por muito tempo.
-            </p>
+                <h2> TERRA PROMETIDA </h2>
+                <button onclick="toggleTerrasTable()">Expandir / Minimizar</button>
+                    <div id="terrasTable" style="display: none;"> <br>
+                        <p> A região que Korinthia quer conquistar é dominada pela floresta de Davokar, extensa e perigosa. 
+                            O sul dessa floresta é uma planície fértil com colinas suaves, onde está localizado Ambria, um reino dividido em sete ducados. 
+                            Korinthia é o maior ducado, com a cidade de Yndaros como capital. A região é cercada por montanhas selvagens e majestosas, 
+                            como as Titãs ao sul e as Corvos ao leste. As montanhas são refúgio para salteadores, pensadores livres e bárbaros rebeldes.
+                        </p> <br>
+                        <p> O reino anão de Küam Zamok parece ser indiferente aos humanos, com exceção de algumas famílias em Yndaros. 
+                            O clima na região é mais frio e úmido do que os ambrianos estão acostumados, com invernos gelados e chuvas pesadas, principalmente durante o outono. 
+                            Os invernos, conhecidos como Istaros, trazem ventos árticos do norte que congelam o sangue nas veias de qualquer um que se aventure ao relento por muito tempo.
+                        </p>
+                    </div>
             </div>
             <div class="vidas">
                 <h2> OS MEIOS DE VIDA </h2>
-                <p> Desde muito antes da chegada de Korinthia, as terras ao norte das Titãs abrigavam uma mistura de criaturas com costumes diversos e relacionamentos complicados. 
-                    A presença dos Ambrianos afetou os povos da região de diferentes formas, resultando em adaptações, desafios e a necessidade de demonstrar singularidade. 
-                    Esta seção oferece uma amostra das criaturas que vivem nas matas e nas planícies, mas é importante lembrar que existem muitas exceções. 
-                    Este texto fornece um retrato geral das pessoas, cultura, tradições e conflitos da região.
+                <button onclick="toggleVidasTable()">Expandir / Minimizar</button>
+                    <div id="vidasTable" style="display: none;"> <br>
+                        <p> Desde muito antes da chegada de Korinthia, as terras ao norte das Titãs abrigavam uma mistura de criaturas com costumes diversos e relacionamentos complicados. 
+                            A presença dos Ambrianos afetou os povos da região de diferentes formas, resultando em adaptações, desafios e a necessidade de demonstrar singularidade. 
+                            Esta seção oferece uma amostra das criaturas que vivem nas matas e nas planícies, mas é importante lembrar que existem muitas exceções. 
+                            Este texto fornece um retrato geral das pessoas, cultura, tradições e conflitos da região.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="povos">
+                <h2> POVOS </h2>
+                <button onclick="togglePovosTable()">Expandir / Minimizar</button>
+                    <div id="povosTable" style="display: none;"> <br>
+                        <p> Em geral, Davokar e áreas próximas são habitadas por três grupos distintos: os ambrianos, os bárbaros e o Povo Antigo (como elfos, goblins e ogros). 
+                            Os ambrianos vêm de Alberetor, ao sul das Titãs, e se tornaram disciplinados e organizados após a Grande Guerra. 
+                            Eles são experientes em guerra, espiritualidade e buscam sempre mais. Os bárbaros estão em mais harmonia com a chegada 
+                            dos ambrianos, descendentes de Symbaroum, e respeitam a natureza sob orientação das bruxas. O Povo Antigo inclui diferentes seres, como elfos e anões, 
+                            que se consideram filhos da natureza. A animosidade é visível nos conflitos entre os súditos de Korinthia e os elfos da Davokar, devido a um antigo 
+                            tratado que os elfos afirmam ter sido violado pelos ambrianos, mas que não é levado a sério por muitos caça-tesouros.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="espiritualidade">
+                <h2> ESPIRITUALIDADE </h2>
+                <button onclick="toggleEspititualidadeTable()">Expandir / Minimizar</button>
+                    <div id="espitualidadeTable" style="display: none;"> <br>
+                        <p> <strong>Prios o Deus do Sol:</strong> O deus do sol Prios foi reconhecido como Uno ou Doador das Leis e simboliza a luz. O 1 padre da igreja do sol se chama Jeseebegai. 
+                            Os ambrianos seguem seus mandamentos que foram pregados pelo padre. Infelizmente Prios perdeu muito de suas forças devido ao o homem negligencia-lo. 
+                            Prios é glorificado pela parte cultivadora do povo, em relação a colheita de solo rico e férteis.
+                            Curia é do alto conselho da Igreja e envia missionários para explorar as profundezas de Davokar pois eles já estabeleceram um templo em Karvosti, 
+                            o antigo local da assembleia dos clãs bárbaros.
+                        </p> <br>
+                    
+                        <p> <strong>O Deus Serpente Uron:</strong> Uma divindade banida pelos Ambrianos que foram reverenciado pelo 
+                            clã Gaoia que partilham de características com a Mãe Terra Ambriana, o lobo de sangue.
+                    
+                        </p>
+                    </div>
+            </div>
+            
+            <div class="cultura">
+                <h2> CULTURA </h2>
+                <p> Ambrianos e bárbaros são contadores de histórias. Os bárbaros valorizam narradores tanto quanto guerreiros, com contadores de histórias selecionados 
+                    vivendo na fortaleza do Alto Chefe. Eles são escolhidos durante um desafio anual e têm a responsabilidade de lembrar eventos históricos. 
+                    atividades de lazer dos clãs incluem brincadeiras com armas e rituais em homenagem à natureza. 
+                </p> <br>
+
+                <p> Todos os bárbaros mostram gratidão à floresta sob a orientação das bruxas. Os contadores de histórias desempenham um papel vital na transmissão de 
+                    contos cautelares. Entre os ambrianos, os contadores de histórias incluem bardos, poetas, atores e artistas, com representações comuns da Grande Guerra. 
+                    Contos sobre os Portadores da Luz ou encontros com criaturas da Davokar também são populares. 
+                </p> <br>
+
+                <p> Os ambrianos também visitam bárbaros para aprender histórias populares, como os poemas atribuídos à Huldra Aroaleta. 
+                    Os nobres ambrianos têm seus próprios espaços para dança e música, enquanto os trabalhadores livres ouvem histórias em tavernas.
+                    Os mercadores e artesãos frequentam os mesmos lugares, organizando-se por riqueza, e os servos e camponeses contam histórias entre si. 
+                    Os súditos de Korinthia são estratificados em recursos e interesses, com diferenças claras entre os grupos sociais.</p>
                 </p>
-                </div>
+            </div>
+
+            <div class="conflitos">
+                <h2> CONFLITOS </h2>
+                <p> As três populações principais da região têm relações diferentes com a Davokar. Ambrianos sempre entram em conflito com o Povo Antigo, 
+                    enquanto os bárbaros ficam no meio. No entanto, muitos indivíduos fogem desses padrões. O clima geral na região é de conflito, 
+                    com os ambrianos querendo explorar a Davokar e o Povo Antigo resistindo. A Rainha Korinthia é a líder das planícies, mas os elfos e bárbaros poderiam mudar isso. 
+                    No entanto, nas florestas, o equilíbrio de poder é mais igualitário. Os ambrianos têm dificuldade em enfrentar os horrores da Davokar. 
+                    Interesses pessoais muitas vezes são priorizados em detrimento do bem comum. Além disso, colaborações entre ambrianos, bárbaros e outros são comuns. 
+                </p> <br>
+
+                <p> A Igreja do Sol não se mistura com "criaturas da noite", mas pode usar sua ajuda. 
+                    Compreender as relações entre os povos e as alianças feitas exigem levar em conta vários fatores, não apenas as facções mencionadas. 
+                    Dada a crescente ameaça dos poderes corruptos da Davokar, alianças improváveis podem ser necessárias para sobreviver.
+                </p>
+            </div>
+
+            <div class="faccoes_nobre">
+                <h2> FACÇÕES </h2>
+                        <h3> Casas da Nobreza </h3>
+                        <button onclick="toggleNobresTable()">Expandir / Minimizar</button>
+                    <div id="nobresTable" style="display: none;"> <br>
+                            <p> Ambria é uma sociedade hierarquizada, governada por famílias nobres chamadas casas. As famílias são classificadas de acordo com sua posição na ordem de sucessão. 
+                                Existem sete ducados em Ambria, cada um dividido em domínios menores chamados condados ou baronatos. 
+                                A Rainha nomeia os duques, que por sua vez nomeiam os condes e barões para administrar terras e súditos, embora haja exceções a essa ordem. 
+                                A Casa de Kohinoor é a principal entre as famílias nobres, com Korintha Ruína da Noite e outros cinco duques de Ambria como parentes próximos da Rainha. 
+                            </p> <br>
+
+                        <p> A situação política em Ambria é complexa, com fofocas e contos que complicam a harmonia aparente. 
+                            A mãe da Rainha está doente, seu padrasto tem influência, e seu tio ressente por ter perdido a chance ao trono. 
+                            Quando os primos da Rainha parecem incompetentes e outras casas planejam destronar os Kohinoor, qualquer um pode pedir a Korinthia
+                            que reconsidere a situação antes de nomear os duques da Terra Prometida. 
+                        </p>  <br>
+
+                            <p> Apesar dos rumores, o governo de Ambria segue funcionando bem, com progresso no desenvolvimento das regiões, 
+                                um exército forte diante das ameaças de Davokar e novas colônias sendo estabelecidas regularmente. Mesmo que existam conflitos domésticos, 
+                                poucos duvidam da capacidade de Korinthia Ruína da Noite de lidar com eles.
+                            </p><br>
+
+                        <h4><strong> Ducados </strong></h4>
+
+                            <p> <strong>Yndarien:</strong> O Grande Ducado de Yndarien é governado pela Rainha Korinthia e possui chuvas abundantes, terras férteis e uma grande população. 
+                                Muitos habitantes vivem entre as montanhas e o rio Doudram, com novos refugiados chegando diariamente. 
+                                Alguns defendem o fechamento da passagem da montanha para outros locais.
+                            </p><br>
+
+                        <p> <strong> Mervidun:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                            Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                            Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                            mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                        </p><br>
+
+                            <p> <strong> Nova Beretor: </strong>Nova Beretor é governada por Ynedar, filho de Korian, que morreu tentando libertar sua irmã. 
+                                Ynedar, mais jovem que o reino ambriano, tem boas relações com os bárbaros. 
+                                Ele governa uma região que extrai óleo de fogo dos Brejos.
+                            </p><br>
+
+                        <p> <strong>Seragon:</strong> Quando a família imediata não é suficiente, você procura parentes mais distantes, como no caso de Seragon, 
+                            que buscava apoio no filho do irmão mais novo do antigo rei. O Duque Gadramei é acusado de beber demais e 
+                            negligenciar seus deveres, mas tem sido eficaz na proteção da fronteira contra o clã Karoha.
+                        </p><br>
+
+                            <p> <strong>Kasandrien:</strong> A irmã da Rainha, Esmerelda, de dezessete anos, é a Duquesa de Kasandrien. 
+                                Agrella fica às margens do Lago Ebel, importante para transporte. 
+                                Esmerelda decreta que os mortos vitoriosos devem ser celebrados, não lamentados, 
+                                tornando Agrella uma cidade de festas sem fim.
+                            </p><br>
+
+                        <p> <strong>Narugor:</strong> O Ducado de Narugor fica ao longo da margem sul da Davokar e tem as fortificações Otra Senja e Otra Dorno.
+                            O Duque Junio Berakka tem a responsabilidade de proteger Ambria da escuridão da mata. 
+                            O duque é um herói do povo e as mudanças pós-guerra afetaram as estruturas das casas nobres.
+                        </p><br>
+
+                            <p> <strong>Nova Berendoria:</strong> Acredita-se que Alesaro Kohinoor não perdoou sua sobrinha, mas sim um grupo de comandantes militares e nobres. 
+                                Apesar de ter recebido o Ducado de Nova Berendoria, ele foi possivelmente enviado para uma região estéril e assolada por vendavais. 
+                                Atualmente, Alesaro está fazendo novas amizades entre os clãs do oeste, de acordo com relatórios de sua sede em Sevona.
+                            </p><br>
+
+                        <p>  <strong>Domínio de Prios:</strong> No centro de Ambria está a área de Prios, com o Primeiro Padre Jeseebegai como representante do Deus Sol.
+                                A Muralha do Templo, sede da Igreja do Sol, fica onde as principais estradas de Ambria se encontram. 
+                                A região é tranquila, com plantações e gado.
+                        </p>
+                    </div>
+            </div> 
+
+            <div class="faccoes_barbaros">
+                <h3> <strong>Clãs Bárbaros</strong></h3>
+                <button onclick="toggleBarbarosTable()">Expandir / Minimizar</button>
+                    <div id="barbarosTable" style="display: none;"> <br>
+                        <p> Quando os Ambrianos chegaram em Davokar, havia treze clãs bárbaros na região. Agora são onze, já que o clã Kadiz foi integrado e o clã Jezora foi destruído. 
+                            Rumores sobre um possível décimo segundo clã, o Clã da Besta, estão circulando, mas até agora não foi confirmado. 
+                            As relações entre os clãs mudaram devido à presença dos Ambrianos e à ameaça das bestas de Davokar. 
+                            Todos os chefes dos clãs estão a favor da paz, mesmo com algumas fronteiras turbulentas. 
+                            O Alto Chefe bárbaro, eleito vitaliciamente em Karvosti, arbitra conflitos entre os clãs, mas não tem o poder absoluto. 
+                            Cada clã tem sua própria estrutura legal e hierarquia. As bruxas lideradas pela Huldra têm grande influência sobre o Alto Chefe 
+                            e os chefes de clã, discutindo conflitos e soluções para Davokar durante encontros regulares. A atual Huldra, Yeleta, é descrita como 
+                            tendo mais controle sobre seu povo do que Korinthia sobre os Ambrianos.
+                        </p>
+
+                        <p> A situação política em Ambria é complexa, com fofocas e contos que complicam a harmonia aparente. 
+                            A mãe da Rainha está doente, seu padrasto tem influência, e seu tio ressente por ter perdido a chance ao trono. 
+                            Quando os primos da Rainha parecem incompetentes e outras casas planejam destronar os Kohinoor, qualquer um pode pedir a Korinthia
+                            que reconsidere a situação antes de nomear os duques da Terra Prometida. 
+                        </p> 
+
+                        <p> Apesar dos rumores, o governo de Ambria segue funcionando bem, com progresso no desenvolvimento das regiões, 
+                            um exército forte diante das ameaças de Davokar e novas colônias sendo estabelecidas regularmente. Mesmo que existam conflitos domésticos, 
+                            poucos duvidam da capacidade de Korinthia Ruína da Noite de lidar com eles.
+                        </p><br>
+
+                    <h4> <strong> Ducados </strong> </h4>
+                        <!-- 1 -->
+                        <p> <strong>Gaoia:</strong> Os Gaoia vivem ao norte, conhecidos por serem brutais. 
+                            São aliados de um linnorme chamado Avô Lint. 
+                            Os Guardas da Ira e emissários do chefe Rábaiamon são vistos no sul em anos alternados.
+                        </p><br>
+
+                            <p> <strong> Enoai:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                            </p><br>
+
+                                <p> <strong> Godnija:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                    Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                    Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                    mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                                </p><br>
+                        <!-- 2 -->
+                        <p> <strong> Yedesa:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                            Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                            Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                            mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                        </p><br>
+
+                            <p> <strong> Baiaga:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                            </p><br>
+
+                                <p> <strong> Zarek:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                    Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                    Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                    mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                                </p><br>
+                        <!-- 3 -->
+                        <p> <strong> Odaiova:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                            Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                            Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                            mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                        </p><br>
+
+                            <p> <strong> Karohar:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                            </p><br>
+
+                                <p> <strong> Vajvod:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                    Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                    Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                    mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                                </p> <br>
+
+                        <!-- 4 -->
+                        <p> <strong> Varakko:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                            Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                            Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                            mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                        </p><br>
+                        
+                            <p> <strong> Saar-kahn:</strong> Mervidun é governado por Abesina, mãe da Rainha, que está doente. 
+                                Na prática, o domínio é controlado pelo Duque Sesario, marido de Abesina e pai de Esmerelda. 
+                                Ele lidera o comércio de metais, granito e madeira a partir de Mergile, tornando Mervidun um dos ducados 
+                                mais ricos de Ambria devido ao transporte rápido pelo rio Noora.
+                            </p><br>
+                    </div>
+            </div>
+
+            <div class="faccoes_prios">
+                <h3> <strong>A Igreja de Prios</strong></h3>
+                <button onclick="togglePriosTable()">Expandir / Minimizar</button>
+                    <div id="priosTable" style="display: none;"> <br>
+                        <p> A Igreja do Deus Sol Prios controla um vasto território em Ambria, centrado na cidade de Muralha do Templo, 
+                            onde reside o Primeiro Padre, Jeseebegai. Ele foi escolhido pela Cúria, que é formada pelos líderes de 
+                            três divisões: o Sacerdócio, os Templários e os Frades do Crepúsculo. 
+                        </p> <br>
+
+                        <p> O Sacerdócio, liderado por Anabela Argona, responsável por interpretar os mandamentos de Prios, 
+                            administra os templos em várias cidades. Anabela, irmã do Conde Alkantor Argona, 
+                            enfrenta acusações de que seu irmão está usando sua posição para aumentar seu poder. 
+                        </p> <br>
+
+                        <p> Os Templários, conhecidos como os Cavaleiros do Sol Moribundo, são os guerreiros da Igreja. 
+                            Com origem nobre, eles desempenharam um papel importante no fim da Grande Guerra, 
+                            algo que o Cavaleiro Comandante, Iakobo Vearra, gosta de enfatizar. 
+                        </p> <br>
+                        <p> Por fim, os Frades do Crepúsculo, com sede nos Titãs, focam em inteligência 
+                            e têm a responsabilidade de monitorar questões internas, com o porta-voz Irmão Eumenos frequentemente 
+                            lembrando que enquanto os Templários lutam contra inimigos externos, eles vigiam as ameaças internas. 
+                        </p>
+                    </div>
+            </div>
+
+            <div class="faccoes_ordomagica">
+                <h3> <strong>Ordo Magica</strong></h3>
+                <button onclick="toggleOrdomagicaTable()">Expandir / Minimizar</button>
+                    <div id="ordomagicaTable" style="display: none;"> <br>
+                        <p> A Ordo Magica, uma importante ordem de estudos místicos, foi transferida de Yndaros para Agrella, à beira do Lago Ebel, 
+                            há cerca de um ano. Sob a liderança do Grande Mestre Seldonio, a ordem tem capítulos em várias localidades, 
+                            incluindo a Davokar. Cada capítulo é dirigido por um Mestre de Capítulo, especialista em áreas como 
+                            Botânica e Magismo, com noviços apoiando suas atividades. 
+                        </p> <br>
+
+                        <p> O principal objetivo da Ordo Magica é a busca por conhecimento, organizando expedições em florestas e montanhas para 
+                            coletar artefatos para estudo. Ao invés de focar na espiritualidade, os membros priorizam a filosofia e a evidência empírica, 
+                            o que frequentemente resulta em conflitos com outras ordens, como teurgos. 
+                        </p> <br>
+
+                        <p> Apesar de sua exploração, a Ordo Magica busca manter laços com a sociedade, como a necessidade de permissões reais e 
+                            financiamento dos nobres. Além disso, a ordem tenta monetizar seus conhecimentos, oferecendo experiências a pessoas 
+                            comuns em locais como o Vivisectório em Yndaros, onde são realizadas dissecações. 
+                        </p>
+                    </div>
+            </div>
+
+            <div class="faccoes_exercitorainha">
+                <h3> <strong>O Exercito da Rainha</strong></h3>
+                <button onclick="toggleExercitoRainhaTable()">Expandir / Minimizar</button>
+                    <div id="exercitorainhaTable" style="display: none;"> <br>
+                        <p> A Rainha Korinthia é a líder suprema do exército, enquanto o Marechal Beremo Herengol cuida das operações diárias. 
+                            O exército é composto por seis divisões pagas pelos ducados, além de uma sétima divisão do Grande Ducado de Yndarien, 
+                            que serve diretamente à Rainha. Cada divisão tem infantaria, cavalaria e unidades de apoio. Existe também a Guarda da Rainha, 
+                            chamada Pansars, liderada pelo General Jomilo. Os Patrulheiros, sob o comando da Coronel Revina Kalfas, focam em inteligência na fronteira,
+                            e rumores sugerem sua ascensão ao posto de Marechal de Campo, gerando tensão entre os generais.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="faccoes_pactoferro">
+                <h3> <strong>Pacto de Ferro</strong></h3>
+                <button onclick="togglePactoFerroTable()">Expandir / Minimizar</button>
+                    <div id="pactoferroTable" style="display: none;"> <br>
+                        <p> Os elfos falam sobre o Pacto de Ferro, uma aliança em que os humanos prometeram deixar a floresta Davokar 
+                            aos cuidados dos elfos e nunca entrar em suas profundezas. Dizem que governantes humanos, incluindo antepassados de Korinthia, 
+                            fizeram essa promessa e deram seis mil anéis de ferro ao lorde élfico Eneáno para selar o tratado. Os bárbaros têm 
+                            lendas que podem confirmar o Pacto de Ferro, mas também podem ter sido enganados por elfos espertos. 
+                            A nobreza ambriana prefere acreditar nessa explicação, apesar dos elfos ameaçando vingança contra aqueles que violam os tratados.
+                        </p>
+                    </div>
+            </div>
+
         </section>
     </main>
 </body>
